@@ -1,0 +1,16 @@
+{
+  "name": "etsy-agent-hq",
+  "version": "1.0.0",
+  "description": "AI agent army HQ dashboard that automates an Etsy store — each agent has its own room and job",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.1"
+  }
+}

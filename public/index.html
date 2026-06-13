@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etsy Agent HQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hq-header">
+    <div class="brand">
+      <span class="brand-icon">🏰</span>
+      <div>
+        <h1>AGENT&nbsp;HQ</h1>
+        <p class="tagline">your etsy store, run by a tiny army <span id="ai-badge" class="ai-badge" hidden>🧠 Claude copy: ON</span></p>
+      </div>
+    </div>
+    <div class="stats-bar" id="stats-bar">
+      <div class="stat"><span class="stat-label">Revenue</span><span class="stat-value money" id="stat-revenue">$0.00</span></div>
+      <div class="stat"><span class="stat-label">Profit</span><span class="stat-value money" id="stat-profit">$0.00</span></div>
+      <div class="stat"><span class="stat-label">Shipped</span><span class="stat-value" id="stat-shipped">0</span></div>
+      <div class="stat"><span class="stat-label">Replies</span><span class="stat-value" id="stat-replies">0</span></div>
+      <div class="stat"><span class="stat-label">Visitors</span><span class="stat-value" id="stat-visitors">0</span></div>
+      <div class="stat alert"><span class="stat-label">Order queue</span><span class="stat-value" id="stat-queue">0</span></div>
+      <div class="stat alert"><span class="stat-label">Inbox</span><span class="stat-value" id="stat-inbox">0</span></div>
+    </div>
+    <div class="army-controls">
+      <button id="deploy-all" class="btn btn-go">▶ Deploy all</button>
+      <button id="pause-all" class="btn btn-stop">⏸ Pause all</button>
+    </div>
+  </header>
+
+  <main class="hq">
+    <section class="rooms" id="rooms"><!-- room cards injected here --></section>
+
+    <aside class="sidebar">
+      <div class="panel">
+        <h2>📡 Live wire</h2>
+        <ul class="feed" id="feed"></ul>
+      </div>
+      <div class="panel">
+        <h2>🔭 Trend board</h2>
+        <ul class="trends" id="trends"><li class="muted">Scout is climbing the tower…</li></ul>
+      </div>
+      <div class="panel">
+        <h2>🛍️ Shelf</h2>
+        <ul class="shelf" id="shelf"></ul>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
