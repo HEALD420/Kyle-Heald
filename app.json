@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Etsy Automator",
+    "slug": "etsy-automator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "etsyautomator",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kyleheald.etsyautomator",
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "remote-notification"]
+      }
+    },
+    "android": {
+      "package": "com.kyleheald.etsyautomator"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "color": "#F1641E"
+        }
+      ]
+    ],
+    "extra": {
+      "etsyApiKey": "REPLACE_WITH_YOUR_ETSY_API_KEY"
+    }
+  }
+}
